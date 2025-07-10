@@ -1,11 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-<header>
-    <tiles:insertAttribute name="header"/>
-</header>
+<head>
+    <link rel="stylesheet" href="<c:url value='/resources/css/style.css' />" />
+</head>
+
+
 <body>
+<tiles:insertAttribute name="header"/>
     <div>
         <%-- 	<aside>
                     <tiles:insertAttribute name="side"/>
@@ -17,8 +21,6 @@
             </div>
         </div>
     </div>
+<tiles:insertAttribute name="footer"/>
 </body>
-<footer>
-    <tiles:insertAttribute name="footer"/>
-</footer>
 </html>
